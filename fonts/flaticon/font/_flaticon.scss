@@ -1,0 +1,139 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:13
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-abacus:before { content: "\f100"; }
+.flaticon-alarm-siren:before { content: "\f101"; }
+.flaticon-atom:before { content: "\f102"; }
+.flaticon-badge-with-a-star:before { content: "\f103"; }
+.flaticon-bar-chart:before { content: "\f104"; }
+.flaticon-book-and-apple:before { content: "\f105"; }
+.flaticon-book-with-bookmark:before { content: "\f106"; }
+.flaticon-briefcase:before { content: "\f107"; }
+.flaticon-calculator:before { content: "\f108"; }
+.flaticon-chemical-bond:before { content: "\f109"; }
+.flaticon-clip:before { content: "\f10a"; }
+.flaticon-computer-monitor:before { content: "\f10b"; }
+.flaticon-country-flag:before { content: "\f10c"; }
+.flaticon-dna-strand:before { content: "\f10d"; }
+.flaticon-document-files:before { content: "\f10e"; }
+.flaticon-drawing-compass:before { content: "\f10f"; }
+.flaticon-failed-exam:before { content: "\f110"; }
+.flaticon-identity-card:before { content: "\f111"; }
+.flaticon-intelligence:before { content: "\f112"; }
+.flaticon-lectern-with-microphone:before { content: "\f113"; }
+.flaticon-letter-cubes:before { content: "\f114"; }
+.flaticon-light-bulb:before { content: "\f115"; }
+.flaticon-magnifier-and-open-book:before { content: "\f116"; }
+.flaticon-math-on-blackboard:before { content: "\f117"; }
+.flaticon-mathematics-class:before { content: "\f118"; }
+.flaticon-microscope:before { content: "\f119"; }
+.flaticon-mortarboard:before { content: "\f11a"; }
+.flaticon-palette-and-brush:before { content: "\f11b"; }
+.flaticon-passed-exam:before { content: "\f11c"; }
+.flaticon-pencil:before { content: "\f11d"; }
+.flaticon-planet-saturn:before { content: "\f11e"; }
+.flaticon-printer:before { content: "\f11f"; }
+.flaticon-projector:before { content: "\f120"; }
+.flaticon-raise-your-hand-to-ask:before { content: "\f121"; }
+.flaticon-reading:before { content: "\f122"; }
+.flaticon-rectangular-glasses:before { content: "\f123"; }
+.flaticon-rugby-ball:before { content: "\f124"; }
+.flaticon-school-bus:before { content: "\f125"; }
+.flaticon-school-calendar:before { content: "\f126"; }
+.flaticon-school-globe:before { content: "\f127"; }
+.flaticon-school-set-square:before { content: "\f128"; }
+.flaticon-school-with-a-flag:before { content: "\f129"; }
+.flaticon-stack-of-books:before { content: "\f12a"; }
+.flaticon-study-certificate:before { content: "\f12b"; }
+.flaticon-teacher-at-the-blackboard:before { content: "\f12c"; }
+.flaticon-telescope:before { content: "\f12d"; }
+.flaticon-volumetric-flask:before { content: "\f12e"; }
+.flaticon-wall-clock:before { content: "\f12f"; }
+.flaticon-winner-cup:before { content: "\f130"; }
+.flaticon-working-with-computer:before { content: "\f131"; }
+    
+    $font-Flaticon-abacus: "\f100";
+    $font-Flaticon-alarm-siren: "\f101";
+    $font-Flaticon-atom: "\f102";
+    $font-Flaticon-badge-with-a-star: "\f103";
+    $font-Flaticon-bar-chart: "\f104";
+    $font-Flaticon-book-and-apple: "\f105";
+    $font-Flaticon-book-with-bookmark: "\f106";
+    $font-Flaticon-briefcase: "\f107";
+    $font-Flaticon-calculator: "\f108";
+    $font-Flaticon-chemical-bond: "\f109";
+    $font-Flaticon-clip: "\f10a";
+    $font-Flaticon-computer-monitor: "\f10b";
+    $font-Flaticon-country-flag: "\f10c";
+    $font-Flaticon-dna-strand: "\f10d";
+    $font-Flaticon-document-files: "\f10e";
+    $font-Flaticon-drawing-compass: "\f10f";
+    $font-Flaticon-failed-exam: "\f110";
+    $font-Flaticon-identity-card: "\f111";
+    $font-Flaticon-intelligence: "\f112";
+    $font-Flaticon-lectern-with-microphone: "\f113";
+    $font-Flaticon-letter-cubes: "\f114";
+    $font-Flaticon-light-bulb: "\f115";
+    $font-Flaticon-magnifier-and-open-book: "\f116";
+    $font-Flaticon-math-on-blackboard: "\f117";
+    $font-Flaticon-mathematics-class: "\f118";
+    $font-Flaticon-microscope: "\f119";
+    $font-Flaticon-mortarboard: "\f11a";
+    $font-Flaticon-palette-and-brush: "\f11b";
+    $font-Flaticon-passed-exam: "\f11c";
+    $font-Flaticon-pencil: "\f11d";
+    $font-Flaticon-planet-saturn: "\f11e";
+    $font-Flaticon-printer: "\f11f";
+    $font-Flaticon-projector: "\f120";
+    $font-Flaticon-raise-your-hand-to-ask: "\f121";
+    $font-Flaticon-reading: "\f122";
+    $font-Flaticon-rectangular-glasses: "\f123";
+    $font-Flaticon-rugby-ball: "\f124";
+    $font-Flaticon-school-bus: "\f125";
+    $font-Flaticon-school-calendar: "\f126";
+    $font-Flaticon-school-globe: "\f127";
+    $font-Flaticon-school-set-square: "\f128";
+    $font-Flaticon-school-with-a-flag: "\f129";
+    $font-Flaticon-stack-of-books: "\f12a";
+    $font-Flaticon-study-certificate: "\f12b";
+    $font-Flaticon-teacher-at-the-blackboard: "\f12c";
+    $font-Flaticon-telescope: "\f12d";
+    $font-Flaticon-volumetric-flask: "\f12e";
+    $font-Flaticon-wall-clock: "\f12f";
+    $font-Flaticon-winner-cup: "\f130";
+    $font-Flaticon-working-with-computer: "\f131";
