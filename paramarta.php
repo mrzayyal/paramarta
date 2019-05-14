@@ -20,9 +20,20 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
+
+          <div class="container">
+          <ul class="navbar-nav absolute-right">
+              <li>
+                <span class="flaticon-mortarboard"></span><a href="paramarta.php?p=login">Masuk</a> / 
+                <span class="flaticon-reading"></span><a href="paramarta.php?p=register">Daftar baru</a>
+              </li>
+            </ul>
+          
+        </div>
+        
     <header role="banner">
      
+            
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand absolute" href="index.html"> <img src="images/logo.png">SMK Paramarta</a>
@@ -33,7 +44,7 @@
           <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link active" href="paramarta.php?p=home">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="courses.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profil</a>
@@ -67,17 +78,13 @@
 
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="about.html">Tentang Kami</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Hubungi Kami</a>
               </li>
             </ul>
-            <ul class="navbar-nav absolute-right">
-              <li>
-                <a href="login.html">Login</a> / <a href="register.html">Register</a>
-              </li>
-            </ul>
+
             
           </div>
         </div>
@@ -85,71 +92,94 @@
 	  
     </header>
     <!-- END header -->
-	<section class="site-hero site-sm-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/2.jpg);">
-      <div class="container">
-        <div class="row align-items-center justify-content-center site-hero-sm-inner">
-          <div class="col-md-7 text-center">
-  
-            <div class="mb-5 element-animate">
-              <img src="images/logo1.png">
-              
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </section>
+
     <!-- END section -->
 		<?php
 			$p=$_GET['p'];
 			if($p=="home"){
-			include "awal.php";
-			}else{
-			echo "far from home";
-			}
+        include "awal.php";
+			}else if($p=="register"){
+        include "registrasi.php";
+			}else if($p=="validasi"){
+        include "validasi.php";
+      }else if($p=="login"){
+        include "login.php";
+      }else{
+        echo "far from home";
+      }
 
 		?>
     <footer class="site-footer">
-      <div class="container">
+       <div class="container">
         <div class="row mb-5">
           <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
             <h3>SMK Paramarta</h3>
-            <p>Perferendis eum illum voluptatibus dolore tempora consequatur minus asperiores temporibus.</p>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li><a href="#">Sejarah</a></li>
+                  <li><a href="#">Visi Misi</a></li>
+                  <li><a href="#">Struktur Organisasi</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
+
           <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
             <h3 class="heading">Quick Link</h3>
             <div class="row">
               <div class="col-md-6">
                 <ul class="list-unstyled">
                   <li><a href="#">Home</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Courses</a></li>
-                  <li><a href="#">Pages</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul class="list-unstyled">
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Tentang Kami</a></li>
+                  <li><a href="#">Pendaftaran Siswa Baru</a></li>
+                  <li><a href="#">Hubungi Kami</a></li>
                 </ul>
               </div>
             </div>
           </div>
-          
+
           <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-            <h3 class="heading">Contact Information</h3>
+            <h3 class="heading"></h3>
+            <div class="block-21 d-flex mb-4">
+              <div class="text">
+
+                <div class="meta">
+
+                </div>
+              </div>
+            </div>  
+            <div class="block-21 d-flex mb-4">
+              <div class="text">
+
+                <div class="meta">
+
+                </div>
+              </div>
+            </div>  
+            <div class="block-21 d-flex mb-4">
+              <div class="text">
+
+                <div class="meta">
+
+                </div>
+              </div>
+            </div>  
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+            <h3 class="heading">Informasi SMK Paramarta</h3>
             <div class="block-23">
               <ul>
-                <li><span class="icon ion-android-pin"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                <li><a href="#"><span class="icon ion-ios-telephone"></span><span class="text">+2 392 3929 210</span></a></li>
-                <li><a href="#"><span class="icon ion-android-mail"></span><span class="text">info@yourdomain.com</span></a></li>
-                <li><span class="icon ion-android-time"></span><span class="text">Monday &mdash; Friday 8:00am - 5:00pm</span></li>
+                <li><span class="icon ion-android-pin"></span><span class="text">Jln Raya Jombang Gg Taqwa No 70 Depan Komplek Villa Jombang Baru, Jombang Ciputat-Tangerang Selatan</span></li>
+                <li><a href="#"><span class="icon ion-ios-telephone"></span><span class="text">021 74634750</span></a></li>
+                <li><a href="#"><span class="icon ion-android-mail"></span><span class="text">info@smk-paramarta.com</span></a></li>
               </ul>
             </div>
           </div>
+
         </div>
+        
         <div class="row pt-5">
           <div class="col-md-12 text-center copyright">
             
