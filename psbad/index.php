@@ -7,6 +7,7 @@ if (!isset($_SESSION['username'])){
   document.location="../paramarta.php?p=login";
   </script>';
 }
+include "../koneksi.php";
 ?>
 <head>
 
@@ -43,7 +44,7 @@ if (!isset($_SESSION['username'])){
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="index.php?psbad=home">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Beranda</span></a>
       </li>
@@ -65,9 +66,9 @@ if (!isset($_SESSION['username'])){
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             
-            <a class="collapse-item" href="#">Data Diri</a>
-            <a class="collapse-item" href="#">Data Alamat</a>
-            <a class="collapse-item" href="#">Data Asal Sekolah</a>
+            <a class="collapse-item" href="?psbad=pribadi">Data Diri</a>
+            <a class="collapse-item" href="?psbad=alamat">Data Alamat</a>
+            <a class="collapse-item" href="?psbad=asalsekolah">Data Asal Sekolah</a>
 
           </div>
         </div>
@@ -81,9 +82,9 @@ if (!isset($_SESSION['username'])){
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Data Ayah</a>
-            <a class="collapse-item" href="#">Data Ibu</a>
-            <a class="collapse-item" href="#">Data Wali</a>
+            <a class="collapse-item" href="?psbad=ayah">Data Ayah</a>
+            <a class="collapse-item" href="?psbad=ibu">Data Ibu</a>
+            <a class="collapse-item" href="?psbad=wali">Data Wali</a>
             
           </div>
         </div>
@@ -198,16 +199,60 @@ if (!isset($_SESSION['username'])){
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-          </div>
-
-        </div>
         <!-- /.buat isi -->
+        <?php 
+        if($_GET['psbad']=="home"){
+          include "isi.php";
+        }else
+        if($_GET['psbad']=="pribadi"){
+          include "pribadi.php";
 
+        }else
+        if($_GET['psbad']=="alamat"){
+          include "alamat.php";
+
+        }else
+        if($_GET['psbad']=="simpanpribadi"){
+          include "simpanpribadi.php";
+
+        }else
+        if($_GET['psbad']=="simpanalamat"){
+          include "simpanalamat.php";
+
+        }else
+        if($_GET['psbad']=="asalsekolah"){
+          include "asalsekolah.php";
+
+        }else
+        if($_GET['psbad']=="simpanasalsekolah"){
+          include "simpanasalsekolah.php";
+
+        }else
+        if($_GET['psbad']=="ayah"){
+          include "ayah.php";
+
+        }else
+        if($_GET['psbad']=="ibu"){
+          include "ibu.php";
+
+        }else
+        if($_GET['psbad']=="wali"){
+          include "wali.php";
+
+        }else{
+          echo "
+            <div class='alert alert-danger alert-dismissible' role='alert'>
+                  <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                  <span aria-hidden='true'>&times;</span>
+                  </button><center>
+                    <strong>404 Page Not Found! </strong> <br/>Halaman Tidak Ada
+                    </center>
+                    </div>
+          ";
+        }
+
+         ?>
       </div>
       <!-- End of Main Content -->
 
@@ -215,7 +260,7 @@ if (!isset($_SESSION['username'])){
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <span>Copyright &copy; SMK Paramarta <?php echo date("Y"); ?></span>
           </div>
         </div>
       </footer>
